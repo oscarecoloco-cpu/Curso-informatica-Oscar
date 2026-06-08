@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Digital</title>
+    <link rel="stylesheet" href="s09.css">
+</head>
+<body>
+    
+    <header>
+        <h1> Hola, soy Oscar</h1>
+        <p>Bienvenido a mi primer portafolio web</p>
+        <button id="btn-tema">Cambiar a Modo Oscuro</button>
+    </header>
+    <nav>
+        <ul>
+            <button id="btn-menu">?</button>
+            <ul id="menu-mavegacion">
+            <li> <a href="#sobre-mi">Sobre mi</a></li>
+            <li> <a href="#proyectos">Mis proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+    <section id="sobre-mi">
+        <h2>Sobre mi</h2>
+        <p> soy estudiante de preparatoria y estoy aprendiendo a construir la web del futuro utilizando codigo limpio y tecnologias modernas</p>
+
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis proyectos</h2>
+        <p>En esta seccion mostrare los trabajos practicos que desarrollare a lo largo de este curso</p>
+
+         <div class="contenedor-proyectos" id="contenedor">
+            
+         </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contactame</h2>
+        <p>¿Tienes alguna duda o quieres trabajar conmigo? Eviame mensaje</p>
+
+        <form id="formulario-contacto">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Oscar Emiliano Berumen Gaspar">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" placeholder="oscarecoloco@gmail.com">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="5" placeholder="Que riko cursito ñam ñam"></textarea>
+            </div>
+            <button type="sumit" id="btn-enviar">Enviar mensaje</button>
+        </form>
+    </section>
+    </main>
+
+        <footer>
+            <p>Creado con esfuerzo, codigo y mucha creatividad. 2026</p>
+        </footer>
+
+        <div id="modal-proyecto" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="btn-cerrar-modal">&times;</span>
+                <h3 id="modal-titulo">Cursito riko</h3>
+                <p id="modal-desc">Esto es un cursito riko de informatica</p>
+            </div>
+        </div>
+
+        <script src="s09.js"></script>
+</body>
+</html>
