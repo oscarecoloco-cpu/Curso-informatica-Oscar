@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="titulo-principal"> Hola Mundo</h1>
+    <button id="miBoton">Presioname</button>
+    <script>
+        // 1. Seleccionar un elemnto HtML
+        const boton = document.getElementById("miBoton");
+        const titulo = document.querySelector(".titulo-principal");
+
+        // 2. Agregar un "escuchador de eventos" (Click)
+        boton.addEventListener("click", function{
+            // 3. Modificar el HTML y CSS en vivo!
+            titulo.textContent = "¡Has hackeado la web";
+            titulo.style.color = "lime";
+
+            // Crear una alerta
+            alert("¡Boton presionado!");
+        });
+    </script>
+</body>
+
+</html>
